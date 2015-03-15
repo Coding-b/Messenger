@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="#fff"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/message_detail_bottom"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:background="#efefef"
+        android:padding="5dp"
+        android:layout_height="wrap_content">
+
+        <ImageButton
+            android:id="@+id/message_detail_send"
+            android:text="@string/message_detail_send"
+            android:layout_width="wrap_content"
+            android:background="@drawable/sendbtn"
+            android:layout_alignParentRight="true"
+            android:layout_height="wrap_content"/>
+
+        <EditText
+            android:id="@+id/message_send_content"
+            android:layout_toLeftOf="@id/message_detail_send"
+            android:hint="键入消息"
+            android:layout_centerVertical="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/message_detail_list"
+        android:layout_above="@id/message_detail_bottom"
+        android:cacheColorHint="@null"
+        android:divider="@null"
+        android:stackFromBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+</RelativeLayout>

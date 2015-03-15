@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">信使</string>
+    <string name="action_settings">设置</string>
+    <string name="action_search">查找</string>
+    <string name="message_detail_send">发送</string>
+    <string name="title_activity_message_detail">MessageDetailActivity</string>
+
+</resources>
